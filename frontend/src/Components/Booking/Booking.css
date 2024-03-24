@@ -1,0 +1,129 @@
+.booking-bg {
+  background-image: url(../../../src/assets/booking-bg.jpg);
+  width: 100%;
+  /* height: 70vh; */
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.bg-filter {
+  background-color: rgba(15, 29, 46, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.booking-form {
+  z-index: 3;
+  padding-bottom: 20px;
+}
+
+.booking-form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.booking-form input {
+  width: 60%;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: rgba(255, 255, 255, 0.9); */
+  background: transparent;
+  border: 0;
+  outline: 2px solid rgba(0, 188, 212, 0.8);
+  border-radius: 1px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 20px;
+  flex-basis: 60%;
+  margin-top: 20px;
+}
+
+.booking-form input:focus {
+  outline: 2px solid rgba(218, 165, 32, 0.8);
+}
+
+.booking-form textarea:focus {
+  outline: 2px solid rgba(218, 165, 32, 0.8);
+}
+
+.booking-form textarea {
+  width: 60%;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+  /* background: rgba(255, 255, 255, 0.9); */
+  background: transparent;
+  border: 0;
+  outline: 2px solid rgba(0, 188, 212, 0.8);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 20px;
+  flex-basis: 60%;
+
+}
+
+.booking-form button {
+  width: 60%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 70px;
+  background: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+}
+
+::placeholder {
+  color: #eee;
+}
+
+.booking-form h4 {
+  color: #fff;
+}
+
+.booking-form button:active {
+  background: #eee;
+  outline: 2px solid rgba(218, 165, 32, 0.8);
+
+}
+
+@media (max-width:480px) {
+  .booking-form input {
+    width: 100%;
+
+  }
+
+  .booking-form form div {
+    margin-top: 10px;
+  }
+
+  .booking-form textarea {
+    width: 100%;
+  }
+
+  .booking-form button {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,198 @@
+.content img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -15%;
+
+}
+
+.slider ul {
+  width: 220%;
+  overflow: hidden;
+  display: flex;
+  transition: 1s;
+}
+
+.slider {
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+
+}
+
+.overlay {
+  background-color: rgba(15, 29, 46, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -15%;
+  left: 0;
+  overflow: hidden;
+}
+
+.hero-left {
+  position: absolute;
+  top: 0%;
+  margin-top: 250px;
+  z-index: 2;
+  text-align: center;
+  transform: translateX(5%);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-left h2 {
+  color: #fff;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 800;
+
+}
+
+.hero-left h4 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.hero-left p {
+  color: #ddd;
+  margin-top: 10px;
+  font-size: 15px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-left button {
+  margin-top: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-left img {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn {
+  color: #fff;
+}
+
+.slider ul li {
+  list-style: none;
+}
+
+@media (max-width:1050px) {
+  .hero-left {
+    transform: translateX(-50px);
+  }
+
+}
+
+@media (max-width:1010px) {
+  .slider-img {
+    top: 0%;
+  }
+
+  .overlay {
+    top: 0%;
+  }
+
+}
+
+@media (max-width:895px) {
+  .hero-left h2 {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-left {
+    transform: translateX(-100px);
+  }
+
+  .hero-left h4 {
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+}
+
+@media (max-width:768px) {
+
+
+  .hero-left {
+    top: -150px;
+    transform: translateX(-50px);
+  }
+
+
+
+  .hero-left h2 {
+    font-size: 40px;
+  }
+
+  .hero-left h4 {
+    font-size: 20px;
+  }
+
+  .hero-left p {
+    font-size: 12px;
+  }
+
+  .hero-left button {
+    font-size: 14px;
+    text-wrap: nowrap;
+  }
+
+  .globle-icon {
+    width: 100px !important;
+    top: -10px;
+  }
+
+  .overlay {
+    top: -15%;
+  }
+}
+
+@media (max-width:480px) {
+  .hero-left h2 {
+    font-size: 25px;
+  }
+
+  .hero-left h4 {
+    font-size: 17px;
+  }
+
+  .hero-left p {
+    font-size: 10px;
+  }
+
+  .hero-left button {
+    font-size: 10px;
+    width: 60%;
+  }
+
+  .globle-icon {
+    display: none;
+  }
+
+  .hero-left {
+    transform: translateX(-110px);
+  }
+
+  .hero-left02 {
+    transform: translateX(-40px);
+
+  }
+
+}

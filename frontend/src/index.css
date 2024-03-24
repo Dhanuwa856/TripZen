@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+
+}
+
+p,
+span,
+button {
+  font-family: "Roboto Mono", monospace;
+
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.active {
+  color: #DAA520;
+}
+
+.btn {
+  color: #fff;
+  background: #00BCD4;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 70px;
+  cursor: pointer;
+  position: relative;
+  /* text-transform: uppercase; */
+  transition: background-color 0.4s ease;
+
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #00BCD4, #ddd);
+  transition: width 0.3s ease;
+  border-radius: 70px;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 98%;
+  /* Expand gradient to the right */
+  transition: width 0.3s ease;
+  /* Transition for animation */
+}
+
+.btn:hover {
+  background: transparent;
+}
+
+.animated-element {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.animate {
+  opacity: 1;
+}

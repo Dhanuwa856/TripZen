@@ -1,0 +1,148 @@
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-logo img {
+  width: 80px;
+  height: 80px;
+  object-position: center;
+  object-fit: cover;
+
+
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.nav-logo a h2 {
+  background: linear-gradient(to right, #00BCD4, #ddd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #00BCD4;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  transition: .4s;
+
+}
+
+.nav-link:hover {
+  color: #DAA520;
+}
+
+nav {
+  background: transparent;
+  transition: 1s;
+  z-index: 100;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  background: #efefef;
+  width: 100%;
+  -webkit-box-shadow: 6px 15px 17px 3px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 6px 15px 17px 3px rgba(0, 0, 0, 0.26);
+  box-shadow: 6px 15px 17px 3px rgba(0, 0, 0, 0.26);
+  transition: 1s;
+}
+
+.nav-menu-icons {
+  display: none;
+  font-size: 40px;
+  background: linear-gradient(to right, #00BCD4, #ddd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width:1050px) {
+  .nav-menu {
+    /* display: none; */
+    flex-direction: column;
+    position: absolute;
+    top: 105%;
+    left: 80%;
+    background: #ddd;
+    padding: 15px 5px;
+    z-index: -1;
+    transition: 1s;
+    transform: translateY(80px);
+    opacity: 0;
+
+
+  }
+
+
+
+  .nav-menu-icons {
+    display: flex;
+  }
+
+
+  .close-icon {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10%;
+  }
+
+  .nav-menu-0 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-icon-non-visible {
+    display: none;
+  }
+
+  .nav-icon-visible {
+    display: flex;
+  }
+
+}
+
+@media (max-width:768px) {
+  .nav-menu {
+    left: 70%;
+  }
+
+}
+
+@media (max-width:480px) {
+  .nav-menu {
+    left: 55%;
+  }
+
+}
